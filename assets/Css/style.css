@@ -328,6 +328,9 @@ ul {
 .navbar > ul > li > a {
   text-decoration: none;
 }
+.has-search {
+  margin-right:1rem;
+}
 .has-search .form-control {
   padding-left: 2.375rem;
 }
@@ -548,6 +551,10 @@ p {
 }
 .productCards .card:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cardFooter{
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 .cardFooter span {
   color: var(--primary-color);
