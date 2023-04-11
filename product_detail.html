@@ -20,43 +20,98 @@
   <!-- Slick Slider -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+      border: 0px solid;
+      border-bottom: 2px solid #1fb397;
+      color: #1fb397;
+      font-weight: 600;
+    }
+
+    .btn-success {
+      background-color: #4bb197;
+    }
+  </style>
 </head>
 
-<body class="relative ">
-   <!-- bottom Navigation -->
-   <div class="bottom_nav_container">
+<body class="relative">
+
+  <!-- bottom Navigation -->
+  <div class="bottom_nav_container">
     <nav class="bottom_navbar">
       <a class="nav-item" href="#">
-        <i class="fa-solid fa-house"></i><span>Home</span>
+        <span style="font-size: 14px;">Total Price
+          <br>
+          <span style="color: #1fb397;">$18.00</span>
+        </span>
+
       </a>
 
       <a class="nav-item" href="#">
-        <i class="fa-solid fa-ticket"></i><span>Voucher</span>
+        <span>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-success"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
+              1</button>
+            <button type="button" class="btn btn-dark">Buy Now</button>
+          </div>
+        </span>
       </a>
 
-      <a class="nav-item" href="#">
-        <i class="fa-solid fa-lock"></i><span>Wallet</span>
-      </a>
-
-      <a class="nav-item" href="#">
-        <i class="fa-solid fa-gear"></i><span>Settings</span>
-      </a>
     </nav>
   </div>
-  
-  <nav class="navbar navbar-expand-lg bg-dark">
+
+  <div class="container-fluid responsive__ai single__product__container header__page">
+    <div class="header__top">
+
+      <header class="container header d-xl-none">
+        <div class="form-group has-search">
+          <!-- <span class="fa fa-search form-control-feedback"></span>
+        <input type="text" class="form-control" placeholder="Search"> -->
+          <a type="button" class="nav-link" href="index.html">
+            <!-- <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> -->
+            <span style="font-size: 24px;">&lt; </span>
+          </a>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a type="button" class="nav-link">
+              <i class="fa fa-heart"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a type="button" class="nav-link">
+              <i class="fa fa-share-alt"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a type="button" class="nav-link">
+              <i class="fa fa-cart-shopping"></i>
+              <span class="icon-button__badge">1</span>
+            </a>
+          </li>
+        </ul>
+        </nav>
+      </header>
+    </div>
+  </div>
+
+
+  <nav class="navbar navbar-expand-lg bg-dark d-none d-lg-block">
     <div class="container-fluid">
-      <a class="navbar-brand text-white" href="./index.html">
+      <a class="navbar-brand text-white" href="#">
         <i class="fa fa fa-shopping-bag"></i>
         TOKOSMILE
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
@@ -68,7 +123,9 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
@@ -83,8 +140,8 @@
       </div>
     </div>
   </nav>
-  <div class="container hideBreadCrumb">
-    <div class="row">
+  <div class="container">
+    <div class="row d-none d-md-block">
       <div class="col-md-12">
 
         <nav
@@ -103,18 +160,34 @@
       </div>
     </div>
   </div>
-
   <div class="container">
     <div class="div row">
       <div class="col-md-4">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
+          <div class="carousel-indicators custom-indicators flex-column m-0">
+            
+            <a aria-current="true" aria-label="Slide 1" class="active" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" style="height: 32px; width: 32px; border-radius: 8px; overflow: hidden; background-image: url('./assets/img/slide1.png'); background-position: center; background-repeat: no-repeat; background-size: cover; background-color: transparent;">
+            </a>
+
+            <a aria-current="true" aria-label="Slide 2" class="active" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" style="height: 32px; width: 32px; border-radius: 8px; overflow: hidden; background-image: url('./assets/img/silde2.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; background-color: transparent;">
+            </a>
+
+            <a aria-current="true" aria-label="Slide 3" class="active" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" style="height: 32px; width: 32px; border-radius: 8px; overflow: hidden; background-image: url('./assets/img/silde3.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; background-color: transparent;">
+            </a>
+              <!-- <img src="./assets/img/silde2.jpg" aria-current="true" aria-label="Slide 2"  data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" style="height: 32px; width: 32px;"/>
+              <img src="./assets/img/silde3.jpg" aria-current="true" aria-label="Slide 3"  data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" style="height: 32px; width: 32px;"/>
+             -->
+            <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1">
+            </button> -->
+            <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2">
+              <img src="./assets/img/slide1.png"/>
+            </button> -->
+            <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3">
+              <img src="./assets/img/slide1.png"/>
+            </button> -->
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
@@ -155,7 +228,8 @@
         <div class="container">
           <div class="row mb-3">
             <div class="col-md-12">
-              <a href="#" class="cardFooter"> <span> Visit Thirfting_Store</span> </a>
+              <a href="#" class="cardFooter"> <span> <i class="fa fa-shopping-bag" aria-hidden="true"></i> Visit
+                  Thirfting_Store</span> </a>
             </div>
           </div>
           <div class="row mb-3">
@@ -168,18 +242,9 @@
 
           <div class="row mb-3">
             <div class="col-md-12">
-              <h6>
-                <strong>Choose Size:</strong>
-              </h6>
-            </div>
-          </div>
-
-          <div class="row mb-5">
-            <div class="col-md-12">
-              <button class="btn btn-outline-secondary"> <strong class="font-weight-bold"> S </strong></button>
-              <button class="btn btn-outline-secondary"> <strong class="font-weight-bold"> M </strong></button>
-              <button class="btn btn-outline-secondary"> <strong class="font-weight-bold"> L </strong></button>
-              <button class="btn btn-outline-success active"> <strong class="font-weight-bold"> XL </strong></button>
+              <strong style="font-size: 14px;color: #8d8d8d;">
+               <i class="fa fa-star"></i> 4.9 Ratings &nbsp;<i class="fa fa-circle" style="font-size:4px;vertical-align: middle;"></i>&nbsp; 2.3k+ Reviews &nbsp; <i class="fa fa-circle" style="font-size:4px;vertical-align: middle;"></i> &nbsp;2.9k + Sold
+              </strong>
             </div>
           </div>
 
@@ -196,26 +261,32 @@
                 </li>
               </ul>
               <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade pt-3 show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                   <div class="table-responsive">
-                  <table class="table table-borderless mt-4">
-                    <tr>
-                      <td>Brand:</td>
-                      <td> <strong class="font-weight-bold"> Charmkpr </strong></td>
-                      <td>Color:</td>
-                      <td> <strong class="font-weight-bold"> Aprikot </strong></td>
-                    </tr>
-                    <tr>
-                      <td>Category:</td>
-                      <td> <strong class="font-weight-bold"> Casual Shirt </strong></td>
-                      <td>Material: </td>
-                      <td> <strong class="font-weight-bold"> Polyester </strong></td>
-                    </tr>
-                  </table>
+                    <table class="table table-borderless mt-4" style="font-size: 12px;">
+                      <tr>
+                        <td>Brand:</td>
+                        <td> <strong class="font-weight-bold"> Charmkpr </strong></td>
+                        <td>Color:</td>
+                        <td> <strong class="font-weight-bold"> Aprikot </strong></td>
+                      </tr>
+                      <tr>
+                        <td>Category:</td>
+                        <td> <strong class="font-weight-bold"> Casual Shirt </strong></td>
+                        <td>Material: </td>
+                        <td> <strong class="font-weight-bold"> Polyester </strong></td>
+                      </tr>
+                      <tr>
+                        <td>Condition:</td>
+                        <td> <strong class="font-weight-bold"> New </strong></td>
+                        <td>Heavy: </td>
+                        <td> <strong class="font-weight-bold"> 200g </strong></td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
-                </div>
-                <div class="tab-pane pt-3 fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                  <form action="" class="mb-3">
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <form action="" class="mb-3 mt-3">
                     <div class="row mb-3">
                       <input type="text" name="" id="" class="form-control" placeholder="Your Name">
                     </div>
@@ -229,11 +300,11 @@
             </div>
           </div>
 
+          <hr style="opacity:0.2">
           <div class="row">
             <div class="col-md-12">
-              <h6 class="font-weight-bold pt-3"> <strong> Description </strong></h6>
-              <hr>
-              <ul style="list-style: disc;" class="mt-3">
+              <h6 class="font-weight-bold"> <strong> Description : </strong></h6>
+              <ul style="list-style: disc; padding-left: 30px; font-size: 14px;" class="mt-3">
                 <li>Long-sleeve dress shirt in classic fit featuring button-down collar</li>
                 <li>Patch Pocket on Left Chest</li>
                 <li>Durable Combination Cotton Fabric</li>
@@ -243,7 +314,7 @@
 
               <br>
 
-              <strong> Chat us if there is anything you need to ask about the product :) </strong>
+              <span style="font-size: 12px;"> Chat us if there is anything you need to ask about the product :) </span>
             </div>
           </div>
 
@@ -253,22 +324,30 @@
             </div>
           </div>
 
+          <hr>
+
           <div class="row mt-4">
             <div class="col-md-12">
-              <h6 class="font-weight-bold"><strong>Shippings Information</strong></h6>
-  
+              <h6 class="font-weight-bold"><strong>Shippings Information : </strong></h6>
+
               <table class="table table-borderless">
                 <tr>
                   <td>Delivery:</td>
-                  <td> <h6 class="font-weight-bold"><strong>Shipping from Jakarta, Indonesia</strong></h6></td>
+                  <td>
+                    <h6 class="font-weight-bold"><strong>Shipping from Jakarta, Indonesia</strong></h6>
+                  </td>
                 </tr>
                 <tr>
                   <td>Shipping:</td>
-                  <td> <h6 class="font-weight-bold"><strong>FREE Internation Shipping</strong> </h6></td>
+                  <td>
+                    <h6 class="font-weight-bold"><strong>FREE Internation Shipping</strong> </h6>
+                  </td>
                 </tr>
                 <tr>
                   <td>Arrive:</td>
-                  <td><h6 class="font-weight-bold"><strong>Estimated arrival on 25 - 27 Oct 2022</strong> </h6></td>
+                  <td>
+                    <h6 class="font-weight-bold"><strong>Estimated arrival on 25 - 27 Oct 2022</strong> </h6>
+                  </td>
                 </tr>
               </table>
             </div>
@@ -277,35 +356,37 @@
           <div class="row mt-4">
             <div class="col-md-12">
               <h6 class="font-weight-bold"><strong>Sellers Information :</strong></h6>
-  
+
               <table class="table table-borderless">
                 <tr>
                   <td width="20%">
                     <!-- <img src="..." class="rounded float-start" alt="..."> -->
-                    <div style="height: 100px; width: 100px; background-color: #c6c6c6; border-radius: 100%; text-align: center;">
-                      <h6 class="pt-4 font-weight-bold"> Thirfting Store.</h6>
+                    <div
+                      style="height: 100px; width: 100px; background-color: #c6c6c6; border-radius: 100%; text-align: center;">
+                      <h6 class="pt-4 font-weight-bold"> <strong> Thirfting Store.</strong></h6>
                     </div>
                   </td>
-                  <td> 
+                  <td>
                     <h4 class="font-weight-bold"><strong>Thirfting_Store</strong></h4>
-                    
-                    <p style="color: #9f9f9f;font-style: italic; font-size: 14px;">Active 5 Minutes ago | 96.7% Positive Feedback</p>
 
-                    <button class="btn btn-outline-success"> Visit Store</button>
-                  </td>                  
+                    <p style="color: #9f9f9f;font-size: 14px;">Active 5 Minutes ago | 96.7% Positive
+                      Feedback</p>
+
+                    <button class="btn btn-outline-success"> <i class="fa fa-shopping-bag" aria-hidden="true"></i> Visit Store</button>
+                  </td>
                 </tr>
               </table>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 d-none d-md-block">
         <div class="row">
-          <div class="col-md-12">
+          <!-- <div class="col-md-12">
             <button class="btn btn-outline-success">
               25% OFF
             </button>
-          </div>
+          </div> -->
         </div>
 
         <div class="row mt-3">
@@ -323,13 +404,16 @@
                 <table class="table table-borderless">
                   <tr>
                     <td>Total Price:</td>
-                    <td> <h5><strong>$45.00</strong></h5></td>
+                    <td>
+                      <h5><strong>$45.00</strong></h5>
+                    </td>
                   </tr>
                 </table>
 
                 <div class="d-grid gap-2">
                   <button class="btn btn-outline-success active" type="button"> Buy Now</button>
-                  <button class="btn btn-outline-success" type="button"><i class="fa fa-shopping-bag" aria-hidden="true"></i>  Add to Bag</button>
+                  <button class="btn btn-outline-success" type="button"><i class="fa fa-shopping-bag"
+                      aria-hidden="true"></i> Add to Bag</button>
                 </div>
 
                 <hr>
@@ -337,11 +421,13 @@
                 <table class="table table-borderless">
                   <tr class="text-center">
                     <td>
-                      <a href="#" class="cardFooter"> <span style="font-size: 14px;"> <i class="fa fa-commenting-o"></i> Chat Seller</span> </a>
+                      <a href="#" class="cardFooter"> <span style="font-size: 14px; font-weight: 400;"> <i class="fa fa-commenting-o"></i>
+                          Chat Seller</span> </a>
                     </td>
-                    
+
                     <td>
-                      <a href="#" class="cardFooter"> <span style="font-size: 14px;"> <i class="fa fa-share-alt"></i> Share Product</span> </a>
+                      <a href="#" class="cardFooter"> <span style="font-size: 14px; font-weight: 400;"> <i class="fa fa-share-alt"></i>
+                          Share Product</span> </a>
                     </td>
                   </tr>
                 </table>
@@ -356,7 +442,7 @@
           </span>
         </div>
 
-        
+
       </div>
     </div>
   </div>
@@ -366,52 +452,12 @@
     <div class="container">
       <hr>
       <div class="d-flex justify-content-between align-items-center bestProduct my-4">
-        <h1>Recommdendation</h1>
+        <h1 style="font-size: 16px;">Recommdendation</h1>
         <a href="#">
           See more
         </a>
       </div>
       <div class="productCards">
-        <div class="card" style="width: 18rem;" data-aos="fade-down">
-          <i class="fa-regular fa-heart"></i>
-          <div class="imgHolder">
-          </div>
-          <div class="card-body">
-            <span class="card-title">Shirt</span>
-            <p class="card-text">Essentials's Men's Short-Sleeve Crewneck T-Shirt</p>
-            <div class="d-flex justify-content-between align-items-center cardFooter">
-              <div class="d-flex justify-content-start align-items-center mr-1 cardReviews">
-                <i class="fa-solid fa-star"></i>
-                4.9
-                |
-                2356
-              </div>
-              <span>
-                $12.00
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;" data-aos="fade-down">
-          <i class="fa-regular fa-heart"></i>
-          <div class="imgHolder1">
-          </div>
-          <div class="card-body">
-            <span class="card-title">Shirt</span>
-            <p class="card-text">Essentials's Men's Short-Sleeve Crewneck T-Shirt</p>
-            <div class="d-flex justify-content-between align-items-center cardFooter">
-              <div class="d-flex justify-content-start align-items-center mr-1 cardReviews">
-                <i class="fa-solid fa-star"></i>
-                4.9
-                |
-                2356
-              </div>
-              <span>
-                $12.00
-              </span>
-            </div>
-          </div>
-        </div>
         <div class="card" style="width: 18rem;" data-aos="fade-down">
           <i class="fa-regular fa-heart"></i>
           <div class="imgHolder">

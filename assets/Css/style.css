@@ -71,6 +71,18 @@ a:focus {
   font-size: 10px;
 }
 
+.custom-indicators{
+  left: 0;
+  top: 0;
+  bottom: auto;
+  right: auto;
+}
+
+.circleSeparater{
+  height: 5px;
+  width: 5px;
+  border-radius: 2.5px;
+}
 /*====================
  Bottom Navbar
  ===================== */
