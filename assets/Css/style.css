@@ -128,7 +128,7 @@ a:focus {
   outline: none;
   border: none;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .bottom_nav_container nav {
     display: flex;
   }
