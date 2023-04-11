@@ -26,7 +26,7 @@ $('.center').slick({
   infinite: true,
   slidesToShow: 4,
   arrows: false,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2000,
   responsive: [
     {
