@@ -281,7 +281,9 @@ ul {
   color: #fff;
   font-size: 1.2rem;
 }
-
+.nav-tabs .nav-item .nav-link{
+  color:black;
+}
 /*====================
  Mobile Responsive Menu
  ===================== */
@@ -669,4 +671,16 @@ p {
   text-align: center;
   opacity: .25;
   background-color: black;
+}
+
+/* Online Dot Css */
+.online-dot-parent .online-dot{
+  position: absolute;
+  background-color:#a5a6a8;
+  border: 2px solid white;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 999px;
+  bottom: 1px;
+  right: 13px;
 }
