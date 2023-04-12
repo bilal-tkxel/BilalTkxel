@@ -965,3 +965,15 @@ p {
   .bottom-pagination a{
     color: #0AA699;
   }
+
+  /* indicator css */
+  .carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 5px;
+    border-radius: 900px !important;
+  }
+  .carousel-indicators{
+    margin-left: 0;
+    justify-content: end;
+    top:100px;
+  }
