@@ -282,7 +282,7 @@ ul {
   font-size: 1.2rem;
 }
 .nav-tabs .nav-item .nav-link{
-  color:black;
+  color:#8d8d8d;
 }
 /*====================
  Mobile Responsive Menu
@@ -674,6 +674,14 @@ p {
 }
 
 /* Online Dot Css */
+.online-dot-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.online-dot-parent h6{
+  margin-bottom: 0;
+}
 .online-dot-parent .online-dot{
   position: absolute;
   background-color:#a5a6a8;
@@ -711,7 +719,7 @@ p {
 }
 .rating-number h1 span{
   font-size: 0.9rem;
-  color: #a5a6a8;
+  color: black;
   font-weight: 500;
 }
 .rating-stars i{
@@ -727,7 +735,7 @@ p {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 1rem;
+  gap: 7px;
   margin-bottom: 0.5rem;
 }
 .progress {
@@ -751,6 +759,7 @@ p {
   .progress {
   height: 7px;
   background-color: #ebeef1;
+  width: 120px;
   background-image: none;
   box-shadow: none;
   }
@@ -877,7 +886,7 @@ p {
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
   }
   .user-review-right span{
     font-weight: 700;
@@ -894,7 +903,7 @@ p {
   .user-review-category p {
     background-color: #0aa69944;
     border: 1px solid #0AA699;
-    color: #2b2d41;
+    color: #03413c;
     border-radius: 99px;
     padding-inline: 10px;
     padding-block: 4px;
@@ -931,7 +940,7 @@ p {
     gap: 0.8rem;
   }
   .custom-pagination .rounded-item a{
-    background-color: #ced4da;
+    background-color: #ced4da4f;
     width: 24px;
     height: 24px;
     display: flex;
