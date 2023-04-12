@@ -97,7 +97,7 @@ a:focus {
 .bottom_nav_container nav {
   justify-content: space-around;
   background-color: white;
-  padding: 12px;
+  padding: 6px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: none;
 }
